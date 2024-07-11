@@ -36,7 +36,7 @@ const ImaDroite = ({image, text,title}) => {
                             className="svg-background"
                         >
                             <path
-                                fill="#155e75"
+                                fill="#141414"
                                 stroke="#141414"
                                 strokeWidth="0.1"
                                 strokeDasharray="0.600001, 0.600001"

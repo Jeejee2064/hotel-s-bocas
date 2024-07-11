@@ -17,7 +17,7 @@ const ImaGauAct = ({ images, titre, text }) => {
     });
     console.log(images);
     const settings = {
-        dots: true,
+        arrows:false,
         infinite: true,
         speed: 800,
         slidesToShow: 1,
@@ -29,7 +29,7 @@ const ImaGauAct = ({ images, titre, text }) => {
     return (
         <div className="w-full h:full md:h-3/4 py-12 bg-gray-800">
             <div className="block lg:flex justify-center">
-                <div className="w-screen md:w-4/5 lg:w-3/5 xl:w-3/5 m-auto rounded-lg h:full ">
+                <div className="w-screen md:w-4/5 lg:w-3/5 xl:w-3/5 m-auto rounded-lg h-3/4 ">
                     <motion.div
                         ref={ref}
                         initial={{ opacity: 0, y: 50 }}
@@ -43,7 +43,7 @@ const ImaGauAct = ({ images, titre, text }) => {
                                     <img 
                                     src={`/img/${image}`}
                                      alt={`Slide ${index + 1}`} 
-                                     className='rounded-lg'
+    className='rounded-lg object-contain w-full h-96' 
                                      />
 
                                 </div>

@@ -9,7 +9,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const ImaGauAct = ({ images, titre, text,heure,horaire }) => {
+const ImaGauAct = ({ images, titre, text,heureptidej,heuredej,heuredin,horaire }) => {
     const controls = useAnimation();
     const [ref, inView] = useInView({
         triggerOnce: true,
@@ -17,13 +17,13 @@ const ImaGauAct = ({ images, titre, text,heure,horaire }) => {
     });
     console.log(images);
     const settings = {
-        dots: false,
+        arrows: false,
         infinite: true,
         speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 4000,
     };
 
     return (
@@ -86,11 +86,17 @@ const ImaGauAct = ({ images, titre, text,heure,horaire }) => {
                             <p className="text-l text-gray-200 md:text-1xl lg:text-xl align-text-center">
                                 {text}
                             </p>
-                            <p className="text-l mt-8 text-gray-200 md:text-1xl lg:text-xl align-text-center">
+                            <p className="text-l underline mt-8 mb-4 text-gray-200 md:text-1xl lg:text-xl align-text-center">
                                 {horaire}
                             </p>
                             <p className="text-l text-gray-200 md:text-1xl lg:text-xl align-text-center">
-                                {heure}
+                                {heureptidej}
+                            </p>
+                                                        <p className="text-l text-gray-200 md:text-1xl lg:text-xl align-text-center">
+                                {heuredej}
+                            </p>
+                                                        <p className="text-l text-gray-200 md:text-1xl lg:text-xl align-text-center">
+                                {heuredin}
                             </p>
                         </div>
                     </motion.div>

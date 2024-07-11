@@ -17,7 +17,7 @@ const ImaGauAct = ({ images, titre, text }) => {
     });
     console.log(images);
     const settings = {
-        dots: true,
+        arrows:false,
         infinite: true,
         speed: 800,
         slidesToShow: 1,

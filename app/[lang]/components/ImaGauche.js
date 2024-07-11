@@ -16,7 +16,7 @@ const ImaGauche = ({ image, text, title }) => {
     });
 
     return (
-        <div className=" md:h-3/4 py-12 lg:py-36 mt-12 bg-gray-800">
+        <div className=" md:h-3/4 py-12 lg:py-36 bg-gray-800">
             <div className="block md:flex justify-center items-center ">
                 <div className="w-screen m-auto  h-full md:w-1/2 xl:w-3/5  ">
                     <motion.img

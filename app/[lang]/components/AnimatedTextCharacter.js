@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { allura } from "../fonts";
+import { styleScript } from "../fonts";
 
 const AniText = ({ text }) => {
   // splitting text into letters
@@ -40,7 +40,7 @@ const AniText = ({ text }) => {
   };
 
   return (
-    <div className={allura.className}>
+    <div className={styleScript.className}>
     <motion.div
       className="overflow-hidden  p-12 text-5xl md:text-8xl"
       variants={container}

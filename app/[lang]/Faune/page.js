@@ -15,8 +15,8 @@ import ParallaxBanner from "../components/ParallaxBanner";
 
 
 export default async function Faune({ params }) {
-    const imagesBeach = ['plage1.jpg', 'plage2.jpg', 'plage3.jpg', 'plage4.jpg'];
-    const imagesSurf = ['chambre1.jpg', 'chambre2.jpg', 'chambre3.jpg', 'chambre4.jpg'];
+    const imagesFaune = ['Monkey.jpg', 'Toucan2.jpg', 'sloth.jpg', 'pelican.jpg'];
+    const imagesFlore = ['chambre1.jpg', 'chambre2.jpg', 'chambre3.jpg', 'chambre4.jpg'];
     const imagesSnorkel = ['chambre1.jpg', 'chambre2.jpg', 'chambre3.jpg', 'chambre4.jpg'];
     const imagesHikes = ['chambre1.jpg', 'chambre2.jpg', 'chambre3.jpg', 'chambre4.jpg'];
 
@@ -38,19 +38,19 @@ export default async function Faune({ params }) {
                 bookNow={lang.bookNow}
             />
             <BGSlider title={lang.faune}
-                images={['tortue.JPG', 'mimitimbi.JPG', 'chambre3.jpg', 'chambre4.jpg']}
+                images={['Toucan.jpg', 'LionFish.jpg']}
             />
             <div className='py-12'>
                 <ImaGauAct
                     titre={lang.faune2}
                     text={lang.fauneText}
-                    images={imagesBeach}
+                    images={imagesFaune}
                 />
                 <Separator />
                 <ImaDroAct
                     titre={lang.flore}
                     text={lang.floreText}
-                    images={imagesHikes}
+                    images={imagesFlore}
                 />
                 <ParallaxBanner image='./img/mimitimbi.JPG' text='Nature' />
 

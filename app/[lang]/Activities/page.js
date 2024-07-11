@@ -89,7 +89,7 @@ const markers = [
         name: {
             en: 'Starfish Beach',
             es: 'Playa Estrella',
-            fr: 'Plage aux Étoiles de Mer',
+            fr: 'Playa Estrella',
         },
         description: {
             en: 'Splendid Beach on the Bay Side, lots of starfish in the water',
@@ -103,7 +103,7 @@ const markers = [
         name: {
             en: 'Paunch Beach',
             es: 'Playa Paunch',
-            fr: 'Plage Paunch',
+            fr: 'Plage de Paunch',
         },
         description: {
             en: 'Natural pool with low depth.',
@@ -187,8 +187,8 @@ const markers = [
     {
         name: {
             en: 'Blue Lagoon',
-            es: 'Laguna Azul',
-            fr: 'Lagon Bleu',
+            es: 'Blue Lagoon',
+            fr: 'Blue Lagoon',
         },
         description: {
             en: 'Rocky Lagoon surrounded by the Jungle',
@@ -344,9 +344,9 @@ const markers = [
 
 export default async function Activities({ params }) {
     const imagesBeach = ['plage1.jpg', 'plage2.jpg', 'plage3.jpg', 'plage4.jpg'];
-    const imagesSurf = ['chambre1.jpg', 'chambre2.jpg', 'chambre3.jpg', 'chambre4.jpg'];
-    const imagesSnorkel = ['chambre1.jpg', 'chambre2.jpg', 'chambre3.jpg', 'chambre4.jpg'];
-    const imagesHikes = ['chambre1.jpg', 'chambre2.jpg', 'chambre3.jpg', 'chambre4.jpg'];
+    const imagesSurf = ['Surf.jpg'];
+    const imagesSnorkel = ['reef1.jpg', 'LionFish.jpg'];
+    const imagesHikes = ['Toucan.jpg', 'Monkey.jpg', 'pelican.jpg'];
 
     const lang = await getDictionary(params.lang);
 
@@ -370,7 +370,7 @@ export default async function Activities({ params }) {
                 bookNow={lang.bookNow}
             />
             <BGSlider title={lang.activite}
-                images={['chambre1.jpg', 'chambre2.jpg', 'chambre3.jpg', 'chambre4.jpg']}
+                images={['reef1.jpg', 'Toucan.jpg', 'Monkey.jpg']}
             />
             <div className='py-12'>
                 <ImaGauAct

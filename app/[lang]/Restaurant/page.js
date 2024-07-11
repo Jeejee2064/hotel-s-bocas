@@ -30,7 +30,9 @@ export default async function Restaurant({ params }) {
                 titre={lang.resto}
                 text={lang.restoText}
                 images={imagesResto}
-                heure={lang.heure}
+                heureptidej={lang.heureptidej}
+                heuredej={lang.heuredej}
+                heuredin={lang.heuredin}
                 horaire={lang.horaire}
             />
             <div className='py-12'>

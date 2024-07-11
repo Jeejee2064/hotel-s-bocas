@@ -283,7 +283,7 @@ const NavBar = ({ hotel, resto, activite, about, contact, faune, bookNow }) => {
         animate="animate"
       >
         <Link href="https://90af79e181b4489f.sirvoy.me/" passHref>
-          <button className="hidden md:block bg-blue-500 text-white px-4 py-2 rounded">
+          <button className="hidden md:block bg-blue-500 text-white mr-4 px-4 py-2 rounded">
             Book Now
           </button>
         </Link>

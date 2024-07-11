@@ -26,7 +26,7 @@ export default async function Home({params}) {
       faune={lang.faune}
       bookNow={lang.bookNow}
       />
-      <BGSlider title={lang.hotel}
+      <BGSlider title={lang.hotelResto}
       images = {['plage1.jpg', 'plage2.jpg', 'plage3.jpg', 'plage4.jpg']}
       />
       <ImaGauche image='chambre1.jpg' text={lang.homeHotel} title={lang.hotel}/>
