@@ -47,7 +47,7 @@ export default async function AboutUs({ params }) {
         <div className='mb-8'>
           <Title className='mb-8' text={lang.conditions} />
         </div>
-        <div className="space-y-8  w-3/4 m-auto">
+        <div className="space-y-8  w-full lg:w-3/4 m-auto">
   
           <AboutText2 text={lang.conditionsText1}/>
           <AboutText2 text={lang.conditionsText2}/>

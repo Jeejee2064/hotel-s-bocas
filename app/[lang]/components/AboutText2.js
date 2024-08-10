@@ -28,7 +28,7 @@ const AboutText2  = ({ text }) => {
           visible: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: 50 },
         }}
-        className="text-lg flex items-center   mx-8 text-gray-200 "
+        className="text-lg flex items-center  mx-4 l:mx-8 text-gray-200 "
       >
 
       <h1>
