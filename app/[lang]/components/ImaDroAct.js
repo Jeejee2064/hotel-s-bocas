@@ -56,9 +56,9 @@ const ImaGauAct = ({ images, titre, text }) => {
                         initial={{ opacity: 0 }}
                         animate={inView ? { opacity: 1 } : { opacity: 0 }}
                         transition={{ duration: 0.6, delay: 0.5 }}
-                        className="px-10  z-10"
+                        className="px-10 lg:px-30  z-10 flex-grow flex items-center justify-center"
                     >
-                        <div className="justify-center items-center">
+                        <div className="justify-center items-center text-center">
                             <Title text={titre} />
                             <p className="text-l text-gray-200 md:text-1xl lg:text-xl align-text-center">
                                 {text}
@@ -66,7 +66,7 @@ const ImaGauAct = ({ images, titre, text }) => {
                         </div>
                     </motion.div>
                 </motion.div>
-                <div className="w-screen md:w-4/5 h-auto lg:w-2/5 xl:w-2/5 m-auto rounded-lg h:full ">
+                <div className="w-screen md:w-4/5 h-auto lg:w-1/2  m-auto rounded-lg h:full ">
                     <motion.div
                         ref={ref}
                         initial={{ opacity: 0, y: 50 }}

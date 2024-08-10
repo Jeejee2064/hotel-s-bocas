@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 
 
-const ImaDroite = ({image, text,title}) => {
+const ImaDroite = ({image, text,title,href, cta}) => {
     const controls = useAnimation();
     const [ref, inView] = useInView({
         triggerOnce: true,
@@ -55,8 +55,8 @@ const ImaDroite = ({image, text,title}) => {
                             <p className=" text-gray-200 md:text-1xl lg:text-xl align-text-center">
                                 {text}                         
                                    </p>
-                            <Link href='/Restaurant'>
-                                <CTA name='View More' />
+                            <Link href={href}>
+                                <CTA name={cta} />
                             </Link>
                         </div>
                     </motion.div>

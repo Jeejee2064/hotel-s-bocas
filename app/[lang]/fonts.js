@@ -1,4 +1,6 @@
 import {Poppins, Parisienne, Style_Script,Montez,Allura} from 'next/font/google'
+import localFont from 'next/font/local';
+
 
 export const poppins = Poppins({
     weight:'400',
@@ -25,3 +27,9 @@ export const allura = Allura({
     subsets: ['latin'],
     display: 'swap',
 })
+
+const ostrich = localFont({
+  src: './OstrichSans-Medium.otf', // Adjust the path accordingly
+
+})
+export default ostrich;

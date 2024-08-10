@@ -14,7 +14,7 @@ import { getDictionary } from "../../dictionary";
 export default async function Home({params}) {
   const lang = await getDictionary(params.lang);
 
-  console.log(lang, 'params for home')
+ 
   return (
     <div className="bg-gray-800">
       <NavBar 
@@ -27,16 +27,19 @@ export default async function Home({params}) {
       bookNow={lang.bookNow}
       />
       <BGSlider title={lang.hotelResto}
-      images = {['plage1.jpg', 'plage2.jpg', 'plage3.jpg', 'plage4.jpg']}
+      images = {['piscine2.jpeg', 'chambre5.jpeg', 'resto7.jpeg']}
       />
-      <ImaGauche image='chambre1.jpg' text={lang.homeHotel} title={lang.hotel}/>
+      <ImaGauche image='ext4.jpeg' text={lang.homeHotel} title={lang.hotel} cta={lang.viewMore} href='/Hotel'/>
       <Separator />     
-      <ImaDroite image='plage1.jpg' text={lang.homeRestaurant} title={lang.resto}/>
+      <ImaDroite image='resto7.jpeg' text={lang.homeRestaurant} title={lang.resto} cta={lang.viewMore} href='/Restaurant'/>
       <SeparatorB />
 
-      <ImaGauche image='plage3.jpg' text={lang.homeActivities} title={lang.activite}/>
-      <ParallaxBanner image='./img/plage2.jpg' text='Bluff Beach' />
-      <BigText />
+      <ImaGauche image='plage.jpg' text={lang.homeActivities} title={lang.activite} cta={lang.viewMore} href='/Activities'/>
+        <Separator />   
+      <ImaDroite image='lys.jpg' text={lang.homeFaune} title={lang.faune} cta={lang.viewMore} href='/Faune'/>
+  
+      <ParallaxBanner image='./img/plage.jpg' text='Bluff Beach' />
+
 
       <Footer
              email={lang.email}

@@ -9,7 +9,7 @@ import ParallaxBanner from "../components/ParallaxBanner";
 
 
 export default async function Restaurant({ params }) {
-    const imagesResto = ['image1.png', 'image2.png', 'image3.png', 'image4.png'];
+    const imagesResto = ['resto1.png'];
 
     const lang = await getDictionary(params.lang);
     return (
@@ -24,7 +24,7 @@ export default async function Restaurant({ params }) {
       bookNow={lang.bookNow}
       />       
         <BGSlider title={lang.resto}
-                images={['image4.png', 'image2.png', 'image3.png', 'image1.png']}
+                images={['ext2.jpg', 'resto4.jpeg', 'resto5.jpeg']}
             />
             <ImaGauRes
                 titre={lang.resto}
@@ -36,7 +36,7 @@ export default async function Restaurant({ params }) {
                 horaire={lang.horaire}
             />
             <div className='py-12'>
-            <ParallaxBanner image='./img/image4.png' text='Au Menu'/>
+            <ParallaxBanner image='./img/resto3.jpeg' text='Au Menu'/>
                 <DinerMenu
                     titleBar={lang.bar}
                     titleBreakfast={lang.breakfast}

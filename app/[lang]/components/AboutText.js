@@ -27,7 +27,7 @@ const AboutText  = ({ text }) => {
           visible: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: 50 },
         }}
-        className="text-lg text-center  text-gray-200"
+        className="sm:text-l md:text-lg text-center  text-gray-200"
       >
         {text}
       </motion.h1>

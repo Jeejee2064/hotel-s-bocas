@@ -8,12 +8,13 @@ import Title from './Title';
 import CTA from './CTA';
 import Link from 'next/link';
 
-const ImaGauche = ({ image, text, title }) => {
+const ImaGauche = ({ image, text, title, href, cta }) => {
     const controls = useAnimation();
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.5,
     });
+    console.log(typeof cta); 
 
     return (
         <div className=" md:h-3/4 py-12 lg:py-36 bg-gray-800">
@@ -60,8 +61,8 @@ const ImaGauche = ({ image, text, title }) => {
                             <Title text={title} />
                         <p className="text-l text-gray-100 md:text-1xl lg:text-xl align-text-center">
                             {text}                        </p>
-                        <Link href='/Hotel'>
-                            <CTA name='View More' />
+                        <Link href={href}>
+                            <CTA name={cta} />
                         </Link>
                     </motion.div>
                 </motion.div>

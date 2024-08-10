@@ -53,7 +53,7 @@ const ImaGauAct = ({ images, titre, text,heureptidej,heuredej,heuredin,horaire }
                 </div>
 
                 <motion.div
-                    className="flex w-full lg:w-1/2 p-10 item-center justify-center relative"
+                    className="flex w-full lg:w-1/2 p-10 items-center justify-center flex-grow flex relative"
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                     transition={{ duration: 0.6 }}
@@ -81,7 +81,7 @@ const ImaGauAct = ({ images, titre, text,heureptidej,heuredej,heuredin,horaire }
                         transition={{ duration: 0.6, delay: 0.5 }}
                         className="px-10  z-10"
                     >
-                        <div className="justify-center items-center">
+                        <div className="justify-center items-center text-center">
                             <Title text={titre} />
                             <p className="text-l text-gray-200 md:text-1xl lg:text-xl align-text-center">
                                 {text}

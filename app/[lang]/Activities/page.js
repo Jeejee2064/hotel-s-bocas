@@ -343,10 +343,10 @@ const markers = [
 ];
 
 export default async function Activities({ params }) {
-    const imagesBeach = ['plage1.jpg', 'plage2.jpg', 'plage3.jpg', 'plage4.jpg'];
+    const imagesBeach = ['plage.jpg'];
     const imagesSurf = ['Surf.jpg'];
-    const imagesSnorkel = ['reef1.jpg', 'LionFish.jpg'];
-    const imagesHikes = ['Toucan.jpg', 'Monkey.jpg', 'pelican.jpg'];
+    const imagesSnorkel = [ 'LionFish.jpg'];
+    const imagesHikes = [ 'paresseux.jpg','tortue.jpg'];
 
     const lang = await getDictionary(params.lang);
 

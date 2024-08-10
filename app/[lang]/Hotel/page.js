@@ -25,7 +25,7 @@ export default async function Hotel({ params }) {
             />
             <BGSlider
                 title={lang.hotel}
-                images={['chambre1.jpg', 'chambre2.jpg', 'chambre3.jpg', 'chambre4.jpg']}
+                images={['ext1.jpg', 'chambre2.jpg', 'saldeb2.jpg']}
             />
             <div
                 className="flex w-full  p-10 item-center justify-center relative"
@@ -52,17 +52,22 @@ export default async function Hotel({ params }) {
                     <p className="text-l md:w-1/2 text-gray-100 md:text-1xl mb-8 m-auto lg:text-xl text-center">
                         {lang.homeHotel}                        </p>
 
+                                <p className="text-l md:w-1/2 text-gray-100 md:text-1xl m-auto lg:text-xl text-center">
+                        {lang.checkIn}                        </p>
+                                <p className="text-l md:w-1/2 text-gray-100 md:text-1xl mb-8 m-auto lg:text-xl text-center">
+                        {lang.checkOut}                        </p>
+
                 </div>
             </div>
 
-            <ParallaxBanner image='./img/mimitimbi.JPG' text={lang.ourRooms} />
+            <ParallaxBanner image='./img/standard5.jpg' text={lang.ourRooms} />
 
             <Cha1
                 title={lang.titreCha1}
                 text={lang.descCha1}
                 CTAname={lang.bookNow}
-                CTAlink='https://90af79e181b4489f.sirvoy.me/'
-                images={['chambre1.jpg', 'chambre2.jpg']}
+                CTAlink='https://b8dd875345308c59.sirvoy.me/'
+                       images={['standard1.jpg', 'standard2.jpg','standard3.jpg','standard5.jpg','standard6.jpg','standard7.jpg','standard8.jpg']}
                 bgColor='bg-gray-800'
             />
             <Separator />
@@ -70,29 +75,29 @@ export default async function Hotel({ params }) {
                 title={lang.titreCha2}
                 text={lang.descCha2}
                 CTAname={lang.bookNow}
-                CTAlink='https://90af79e181b4489f.sirvoy.me/'
-                images={['chambre3.jpg', 'chambre4.jpg']}
+                CTAlink='https://b8dd875345308c59.sirvoy.me/'
+                images={['deluxe1.jpg', 'deluxe2.jpg','deluxe3.jpg','deluxe4.jpg','deluxe5.jpg','deluxe6.jpg','deluxe7.jpg','deluxe8.jpg']}
                 bgColor='bg-gray-600'
 
 
             />
-            <ParallaxBanner image='./img/bluff.JPG' text={lang.ourSuites} />
+            <ParallaxBanner image='./img/suite5.jpg' text={lang.ourSuites} />
             <Cha1
                 title={lang.titreCha3}
                 text={lang.descCha3}
                 CTAname={lang.bookNow}
-                CTAlink='https://90af79e181b4489f.sirvoy.me/'
-                images={['chambre2.jpg', 'chambre4.jpg']}
-
+                CTAlink='https://b8dd875345308c59.sirvoy.me/'
+                        images={['junior1.jpg', 'junior2.jpg','junior3.jpg','junior4.jpg','junior5.jpg','junior6.jpg','junior7.jpg','junior8.jpg']}
+  bgColor='bg-gray-600'
             />
-            <Separator />
+            <SeparatorB/>
             <Cha1
                 title={lang.titreCha4}
                 text={lang.descCha4}
                 CTAname={lang.bookNow}
-                CTAlink='https://90af79e181b4489f.sirvoy.me/'
-                images={['chambre3.jpg', 'chambre4.jpg']}
-                bgColor='bg-gray-600'
+                CTAlink='https://b8dd875345308c59.sirvoy.me/'
+                       images={['suite1.jpg', 'suite2.jpg','suite3.jpg','suite4.jpg','suite5.jpg','suite6.jpg','suite7.jpg','suite8.jpg']}
+                bgColor='bg-gray-800'
 
 
             />

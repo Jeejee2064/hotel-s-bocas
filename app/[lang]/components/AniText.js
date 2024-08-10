@@ -40,14 +40,14 @@ const AniText = ({ text }) => {
 
   return (
     <motion.div
-      className="overflow-hidden  text-2xl text-white md:text-4xl"
+      className="overflow-hidden  text-xl text-white md:text-4xl"
       variants={container}
       initial="hidden"
       animate="visible"
     >
       {letters.map((letter, index) => (
         <motion.span    
-        style={{ textShadow: "3px 3px 4px rgba(255,255,255,0.2)" }}       
+            
         className=" justify-center" 
         variants={child} 
         key={index}>

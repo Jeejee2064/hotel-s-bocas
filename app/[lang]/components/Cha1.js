@@ -39,7 +39,7 @@ const Cha1 = ({ title, text, images, CTAname, CTAlink, bgColor }) => {
 
             <div className="   ">
             <Title text={title} />
-                <div className=" mx-auto items-center justify-center mt-8 ">
+                <div className=" mx-auto  items-center justify-center mt-8 ">
                     <motion.div
                         ref={ref}
                         initial={{ opacity: 0, y: 50 }}
@@ -47,14 +47,17 @@ const Cha1 = ({ title, text, images, CTAname, CTAlink, bgColor }) => {
                         transition={{ duration: 0.6 }}
                         className="items-center justify-center"
                     >
-                        <Slider {...settings} className="md:w-3/4 w-full lg:w-3/5 h-1/2 mx-auto ">
-                            {images.map((image, index) => (
-                                <div key={index}>
-                                                <img src={`/img/${image}`} alt={`Slide ${index + 1}`}  />
-
-                                </div>
-                            ))}
-                        </Slider>
+                        <Slider {...settings} className="md:w-3/4 w-full lg:w-3/5  mx-auto ">
+    {images.map((image, index) => (
+        <div key={index}>
+            <img 
+                src={`/img/${image}`} 
+                alt={`Slide ${index + 1}`} 
+                className="w-full h-1/2  object-cover" 
+            />
+        </div>
+    ))}
+</Slider>
                     </motion.div>
                 </div>
                 <motion.div

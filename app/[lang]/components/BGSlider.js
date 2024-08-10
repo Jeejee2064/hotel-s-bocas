@@ -30,6 +30,7 @@ const BGSlider = ({ images, title }) => {
           <div className="relative" key={index}>
             <div className="w-full h-screen relative" >
               <img src={`/img/${image}`} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
+              <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
               <div
                 className="absolute bottom-0 w-full h-1/5 bg-gradient-to-t from-gray-800 to-transparent"
 
@@ -48,7 +49,7 @@ const BGSlider = ({ images, title }) => {
 
                 <div className='w-full flex items-center justify-center'>
                   <Image
-                    src="/logoS.svg"
+                    src="/LogoSB.svg"
                     alt="SVG Image"
                     width={300}
                     height={300}

@@ -15,8 +15,8 @@ import ParallaxBanner from "../components/ParallaxBanner";
 
 
 export default async function Faune({ params }) {
-    const imagesFaune = ['Monkey.jpg', 'Toucan2.jpg', 'sloth.jpg', 'pelican.jpg'];
-    const imagesFlore = ['chambre1.jpg', 'chambre2.jpg', 'chambre3.jpg', 'chambre4.jpg'];
+    const imagesFaune = [ 'Toucan2.jpg', 'paresseux.jpg'];
+    const imagesFlore = ['hibiscus.jpg', 'lys.jpg', 'heliconia.jpg'];
     const imagesSnorkel = ['chambre1.jpg', 'chambre2.jpg', 'chambre3.jpg', 'chambre4.jpg'];
     const imagesHikes = ['chambre1.jpg', 'chambre2.jpg', 'chambre3.jpg', 'chambre4.jpg'];
 
@@ -38,7 +38,7 @@ export default async function Faune({ params }) {
                 bookNow={lang.bookNow}
             />
             <BGSlider title={lang.faune}
-                images={['Toucan.jpg', 'LionFish.jpg']}
+                images={[ 'LionFish.jpg']}
             />
             <div className='py-12'>
                 <ImaGauAct

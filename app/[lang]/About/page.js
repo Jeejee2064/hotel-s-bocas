@@ -56,7 +56,7 @@ export default async function AboutUs({ params }) {
       </div>
       <div className="">
         <img
-          src="/img/plage2.jpg"
+          src="/img/ext4.jpeg"
           alt="Sonia and Sebastien Brunet"
           className='w-screen'
         />
