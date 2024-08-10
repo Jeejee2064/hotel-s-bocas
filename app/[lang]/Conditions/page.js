@@ -4,7 +4,9 @@ import NavBar from '../components/NavBar';
 import { getDictionary } from "../../../dictionary";
 import Title from '../components/Title';
 import Footer from '../components/Footer';
-import AboutText from '../components/AboutText';
+import AboutText2 from '../components/AboutText2';
+
+
 export default async function AboutUs({ params }) {
   const lang = await getDictionary(params.lang);
 
@@ -40,23 +42,36 @@ export default async function AboutUs({ params }) {
 
         </div>
       </div>
+
       <div className="items-center text-gray-200  p-12">
         <div className='mb-8'>
-          <Title className='mb-8' text={lang.about} />
+          <Title className='mb-8' text={lang.conditions} />
         </div>
-        <div className="space-y-4">
+        <div className="space-y-8  w-3/4 m-auto">
   
-          <AboutText text={lang.aboutText1}/>
-          <AboutText text={lang.aboutText2}/>
-          <AboutText text={lang.aboutText3}/>
-          <AboutText text={lang.aboutText4}/>
+          <AboutText2 text={lang.conditionsText1}/>
+          <AboutText2 text={lang.conditionsText2}/>
+          <AboutText2 text={lang.conditionsText3}/>
+          <AboutText2 text={lang.conditionsText4}/>
+                    <AboutText2 text={lang.conditionsText5}/>
+          <AboutText2 text={lang.conditionsText6}/>
+          <AboutText2 text={lang.conditionsText7}/>
+          <AboutText2 text={lang.conditionsText8}/>
+                    <AboutText2 text={lang.conditionsText9}/>
+          <AboutText2 text={lang.conditionsText10}/>
+          <AboutText2 text={lang.conditionsText11}/>
+          <AboutText2 text={lang.conditionsText12}/>
+                    <AboutText2 text={lang.conditionsText13}/>
+          <AboutText2 text={lang.conditionsText14}/>
+          <AboutText2 text={lang.conditionsText15}/>
+          <AboutText2 text={lang.conditionsText16}/>
           
          
         </div>
       </div>
       <div className="">
         <img
-          src="/img/ext4.jpeg"
+          src="/img/ext7.jpeg"
           alt="Sonia and Sebastien Brunet"
           className='w-screen'
         />

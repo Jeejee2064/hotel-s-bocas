@@ -57,12 +57,13 @@ export default async function Faune({ params }) {
                
             </div>
 
-            <Footer
-                email={lang.email}
-                adress={lang.adress}
-                phone={lang.phone}
-                contact={lang.contact}
-            />
+      <Footer
+             email={lang.email}
+              adress={lang.adress} 
+              phone={lang.phone} 
+              contact={lang.contact}
+              conditions={lang.conditions}
+              />
         </div>
     );
 };

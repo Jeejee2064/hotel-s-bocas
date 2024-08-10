@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image'
 
 
-const Footer = ({ email, phone, adress, contact }) => {
+const Footer = ({ email, phone, adress, contact, conditions }) => {
   const DynamicMapComponent = dynamic(
     () => import('./FootMap'),
     { ssr: false }
@@ -50,8 +50,15 @@ const Footer = ({ email, phone, adress, contact }) => {
               className="mr-2"
             />
             Bluff Beach, Isla Colón, Bocas del Toro, Panamá</Link>
+
           </div>
+                      <Link className='flex ' href="./Conditions">
+<h1         className="p-8 text-l text-center  text-blue-400 font-bold">
+            {conditions}
+            </h1>
+            </Link>
         </div>
+
       </div>
     </footer>
   );

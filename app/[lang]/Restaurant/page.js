@@ -44,13 +44,13 @@ export default async function Restaurant({ params }) {
                     titleLunch={lang.lunch}
                 />
             </div>
-
-            <Footer
-                email={lang.email}
-                adress={lang.adress}
-                phone={lang.phone}
-                contact={lang.contact}
-            />
+      <Footer
+             email={lang.email}
+              adress={lang.adress} 
+              phone={lang.phone} 
+              contact={lang.contact}
+              conditions={lang.conditions}
+              />
         </div>
     );
 };

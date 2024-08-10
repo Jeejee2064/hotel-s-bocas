@@ -8,6 +8,7 @@ import SeparatorB from "../components/SeparatorB";
 import { getDictionary } from "../../../dictionary";
 import ParallaxBanner from "../components/ParallaxBanner";
 import ImaGauche from "../components/ImaGauche";
+import Link from 'next/link';
 
 
 export default async function Hotel({ params }) {
@@ -56,7 +57,11 @@ export default async function Hotel({ params }) {
                         {lang.checkIn}                        </p>
                                 <p className="text-l md:w-1/2 text-gray-100 md:text-1xl mb-8 m-auto lg:text-xl text-center">
                         {lang.checkOut}                        </p>
-
+                                              <Link className='flex w-full justify-center' href="./Conditions">
+<h1         className="p-8 text-l text-center  text-blue-400 font-bold">
+            {lang.conditions}
+            </h1>
+       </Link>
                 </div>
             </div>
 
@@ -102,12 +107,13 @@ export default async function Hotel({ params }) {
 
             />
 
-            <Footer
-                email={lang.email}
-                adress={lang.adress}
-                phone={lang.phone}
-                contact={lang.contact}
-            />
+      <Footer
+             email={lang.email}
+              adress={lang.adress} 
+              phone={lang.phone} 
+              contact={lang.contact}
+              conditions={lang.conditions}
+              />
         </div>
     );
 };

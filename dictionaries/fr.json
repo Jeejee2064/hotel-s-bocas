@@ -9,6 +9,7 @@
   "email": "Courriel",
   "adress": "Adresse",
   "phone": "Téléphone",
+  "conditions":"Conditions générales",
   "checkIn":"Check In  : 15h30",
   "checkOut":"Check Out : 11h30",
   "bocasMap":"Carte de Bocas del Toro",
@@ -62,7 +63,23 @@
   "faune2":"Faune",
   "fauneText":"Au cœur de la biodiversité de Bocas del Toro, Isla Colón, la faune offre un spectacle éblouissant tant sur terre que sous les eaux cristallines. Dans la canopée luxuriante, les singes hurleurs résonnent de leurs appels distinctifs, tandis que les toucans aux couleurs vives s'envolent gracieusement entre les branches. Sous-marine, les raies aigles glissent avec élégance, accompagnées de bancs de poissons tropicaux chatoyants et de coraux aux formes fantastiques, faisant de chaque plongée une aventure inoubliable.",
   "flore":"Flore",
-  "floreText":"La flore luxuriante de Bocas del Toro, Isla Colón, évoque un tableau enchanteur où la vie végétale prospère dans une diversité éclatante. Les palmiers imposants s'élèvent vers le ciel azuré, tandis que les mangroves s'étendent en un réseau labyrinthique le long des côtes, offrant un habitat vital à une multitude de créatures marines. Les orchidées sauvages parsèment la forêt de leurs couleurs vibrantes, créant un spectacle éblouissant pour les promeneurs qui explorent les sentiers verdoyants de cette île tropicale."
-  
+  "floreText":"La flore luxuriante de Bocas del Toro, Isla Colón, évoque un tableau enchanteur où la vie végétale prospère dans une diversité éclatante. Les palmiers imposants s'élèvent vers le ciel azuré, tandis que les mangroves s'étendent en un réseau labyrinthique le long des côtes, offrant un habitat vital à une multitude de créatures marines. Les orchidées sauvages parsèment la forêt de leurs couleurs vibrantes, créant un spectacle éblouissant pour les promeneurs qui explorent les sentiers verdoyants de cette île tropicale.",
+ "conditionsText1": "Ce site Web est destiné à la réservation de chambres à l'Hôtel S. L'utilisation de ce site Web implique l'acceptation pleine et inconditionnelle des termes et conditions du contrat sans la nécessité d'une transcription écrite.",
+  "conditionsText2": "Garantie : La réservation est confirmée et garantie avec une carte de crédit ou un dépôt.",
+  "conditionsText3": "Frais d'annulation : Aucun frais ne sera facturé pour une annulation avant 31 jours. Si l'annulation est faite dans les 31 jours ou si le client ne se présente pas, 100 % du prix total, taxes comprises, sera facturé.",
+  "conditionsText4": "Politique relative aux mineurs : Les mineurs de moins de 18 ans séjournant à l'hôtel doivent être accompagnés de leurs parents, enseignants ou autres adultes dûment autorisés. Le personnel de l'hôtel peut exiger une documentation pertinente identifiant les adultes, parents/enseignants comme personnes autorisées. Les enfants de moins de 10 ans ne sont pas admis.",
+  "conditionsText5": "Les prix sur le site Web n'incluent pas la TVA. Un e-mail de confirmation affichera le prix final taxes incluses.",
+  "conditionsText6": "Les prix incluent le petit-déjeuner pour les occupants de la chambre.",
+  "conditionsText7": "Les chambres sont soumises aux règles d'occupation maximale fixées par l'hôtel.",
+  "conditionsText8": "L'enregistrement se fait à 15h00. Le départ se fait à 11h00.",
+  "conditionsText9": "La plage et les routes sont publiques, et l'hôtel n'est pas responsable de tout incident qui pourrait se produire dans les lieux mentionnés ci-dessus.",
+  "conditionsText10": "Utilisation de la piscine : La baignade n'est pas surveillée et est de la seule responsabilité des clients ou, dans le cas des mineurs, de leurs parents, sans que l'hôtel ou ses employés puissent être tenus responsables pour quelque raison que ce soit. La baignade est autorisée de 8h00 à 19h00. Il est interdit de manger ou de boire dans la piscine.",
+  "conditionsText11": "L'utilisateur déclare qu'il est le titulaire de la carte bancaire fournie pour le paiement des services.",
+  "conditionsText12": "L'hôtel accepte les espèces, Visa, MasterCard et les cryptomonnaies comme moyens de paiement.",
+  "conditionsText13": "Nous nous réservons le droit, et vous nous autorisez, à débiter votre carte de crédit ou de débit pour tout dommage causé dans votre chambre ou à l'hôtel pendant votre séjour (y compris, mais sans s'y limiter, le nettoyage spécialisé) ou pour tout objet manquant ou cassé à votre départ.",
+  "conditionsText14": "Le client garantit que les informations personnelles et de paiement fournies à l'Hôtel S sont exactes, actuelles et complètes et accepte la responsabilité d'informer l'Hôtel S de tout changement pour effectuer le paiement correspondant.",
+  "conditionsText15": "L'Hôtel S n'assume aucune responsabilité et ne versera aucune compensation lorsque l'exécution de ses obligations est empêchée ou affectée directement ou indirectement par ou à la suite d'un cas de force majeure ou de toute autre circonstance échappant à son contrôle raisonnable, y compris, mais sans s'y limiter, les inondations, tremblements de terre, conditions météorologiques extrêmement défavorables, catastrophes naturelles, autres actes de Dieu, actes de terrorisme, incendie ou défaillance de l'électricité, du gaz, de l'eau ou d'autres services publics, des machines de l'usine, des ordinateurs, des véhicules ou de tout effondrement de structure de bâtiment.",
+  "conditionsText16": "Il est interdit de fumer dans les chambres ou dans le restaurant."
+              
 
 }

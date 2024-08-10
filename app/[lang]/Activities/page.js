@@ -402,12 +402,13 @@ export default async function Activities({ params }) {
                 <DynamicBocasMap markers={markers} />
             </div>
 
-            <Footer
-                email={lang.email}
-                adress={lang.adress}
-                phone={lang.phone}
-                contact={lang.contact}
-            />
+      <Footer
+             email={lang.email}
+              adress={lang.adress} 
+              phone={lang.phone} 
+              contact={lang.contact}
+              conditions={lang.conditions}
+              />
         </div>
     );
 };

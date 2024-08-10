@@ -46,6 +46,7 @@ export default async function Home({params}) {
               adress={lang.adress} 
               phone={lang.phone} 
               contact={lang.contact}
+              conditions={lang.conditions}
               />
 
     </div>
