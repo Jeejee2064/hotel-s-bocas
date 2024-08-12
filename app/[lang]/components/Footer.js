@@ -51,7 +51,7 @@ const Footer = ({ email, phone, adress, contact, conditions }) => {
             />
             Bluff Beach, Isla Colón, Bocas del Toro, Panamá</Link>
                         <br />
-            <Link className='flex  items-center ' href="https://www.https://www.instagram.com/hotel_s_bocas/">
+            <Link className='flex  items-center ' href="https://www.instagram.com/hotel_s_bocas/">
             <img
               src="/instagram.svg"
               alt="instagram icon" 
