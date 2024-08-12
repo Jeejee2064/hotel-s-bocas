@@ -20,7 +20,7 @@ const Footer = ({ email, phone, adress, contact, conditions }) => {
           <div className="text-2xl font-bold my-4">{contact}</div>
           <div>
             
-            <Link className='flex ' href="mailto:sosebbocas@gmail.com">
+            <Link className='flex  items-center ' href="mailto:sosebbocas@gmail.com">
             <img
               src="/email.png"
               alt="mail icon" 
@@ -31,7 +31,7 @@ const Footer = ({ email, phone, adress, contact, conditions }) => {
              sosebbocas@gmail.com
             </Link>
             <br />
-            <Link className='flex ' href="https://wa.me/50767987980">
+            <Link className='flex  items-center  ' href="https://wa.me/50767987980">
             <img
               src="/whatsapp.png"
               alt="whatsapp icon" 
@@ -41,7 +41,7 @@ const Footer = ({ email, phone, adress, contact, conditions }) => {
             />
            +50767987980 (WhatsApp)</Link>
             <br />
-            <Link className='flex ' href="https://www.google.com/maps/place/9%C2%B024'21.7%22N+82%C2%B015'02.8%22W/@9.4058516,-82.2526802,17z/">
+            <Link className='flex  items-center ' href="https://www.google.com/maps/place/9%C2%B024'21.7%22N+82%C2%B015'02.8%22W/@9.4058516,-82.2526802,17z/">
             <img
               src="/location.png"
               alt="location icon" 
@@ -50,6 +50,16 @@ const Footer = ({ email, phone, adress, contact, conditions }) => {
               className="mr-2"
             />
             Bluff Beach, Isla Colón, Bocas del Toro, Panamá</Link>
+                        <br />
+            <Link className='flex  items-center ' href="https://www.https://www.instagram.com/hotel_s_bocas/">
+            <img
+              src="/instagram.svg"
+              alt="instagram icon" 
+              width={30}
+              height={30}
+              className="mr-2"
+            />
+            @hotel_s_bocas</Link>
 
           </div>
                       <Link className='flex ' href="./Conditions">
