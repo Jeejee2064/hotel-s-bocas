@@ -50,6 +50,9 @@ export default async function AboutUs({ params }) {
           <AboutText text={lang.aboutText2}/>
           <AboutText text={lang.aboutText3}/>
           <AboutText text={lang.aboutText4}/>
+                    <AboutText text={lang.aboutText5}/>
+                              <AboutText text={lang.aboutText6}/>
+                                        <AboutText text={lang.aboutText7}/>
           
          
         </div>
