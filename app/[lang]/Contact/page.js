@@ -30,7 +30,7 @@ export default async function Contact({ params }) {
         <div className="pt-16">
           <div className="w-full flex items-center justify-center">
             <Image
-              src="/logoS.svg"
+              src="/LogoSB.svg"
               alt="SVG Image"
               width={300}
               height={300}
