@@ -39,7 +39,15 @@ const Cha1 = ({ title, text, images, CTAname, CTAlink, bgColor, options }) => {
 
             <div className="   ">
             <Title text={title} />
-            <h1 className='text-center text-gray-200'>{options}</h1>
+    <motion.h1
+                    ref={ref}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                    transition={{ duration: 0.6 }}
+                    className='text-center text-gray-200'
+                >
+                    {options}
+                </motion.h1>
                 <div className=" mx-auto  items-center justify-center mt-8 ">
                     <motion.div
                         ref={ref}
