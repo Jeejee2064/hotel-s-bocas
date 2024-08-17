@@ -57,6 +57,22 @@ export default async function Hotel({ params }) {
                         {lang.checkIn}                        </p>
                                 <p className="text-l md:w-1/2 text-gray-100 md:text-1xl mb-8 m-auto lg:text-xl text-center">
                         {lang.checkOut}                        </p>
+                                          <p className="text-l md:w-1/2 underline mb-4 text-gray-100 md:text-1xl m-auto lg:text-xl text-center">
+                        {lang.hotel1}                        </p>
+                                                                  <p className="text-l mb-2 md:w-1/2 text-gray-100 md:text-1xl m-auto lg:text-xl text-center">
+                        {lang.hotel2}                        </p>
+                                                                  <p className="text-l mb-2 md:w-1/2 text-gray-100 md:text-1xl m-auto lg:text-xl text-center">
+                        {lang.hotel3}                        </p>
+                                                                  <p className="text-l mb-2 md:w-1/2 text-gray-100 md:text-1xl m-auto lg:text-xl text-center">
+                        {lang.hotel4}                        </p>
+                                                                  <p className="text-l mb-2 md:w-1/2 text-gray-100 md:text-1xl m-auto lg:text-xl text-center">
+                        {lang.hotel5}                        </p>
+                                                                  <p className="text-l mb-2 md:w-1/2 text-gray-100 md:text-1xl m-auto lg:text-xl text-center">
+                        {lang.hotel6}                        </p>
+                                                                  <p className="text-l mb-2 md:w-1/2 text-gray-100 md:text-1xl m-auto lg:text-xl text-center">
+                        {lang.hotel7}                        </p>
+                                                                  <p className="text-l mb-2 md:w-1/2 text-gray-100 md:text-1xl m-auto lg:text-xl text-center">
+                        {lang.hotel8}                        </p>
                                               <Link className='flex w-full justify-center' href="./Conditions">
 <h1         className="p-8 text-l text-center  text-blue-400 font-bold">
             {lang.conditions}
@@ -71,8 +87,9 @@ export default async function Hotel({ params }) {
                 title={lang.titreCha1}
                 text={lang.descCha1}
                 CTAname={lang.bookNow}
+                options={lang.bal}
                 CTAlink='https://b8dd875345308c59.sirvoy.me/'
-                       images={['standard1.jpg', 'standard2.jpg','standard3.jpg','standard5.jpg','standard6.jpg','standard7.jpg','standard8.jpg']}
+                       images={['deluxe1.jpg', 'deluxe2.jpg','deluxe3.jpg','deluxe4.jpg','deluxe5.jpg','deluxe6.jpg','deluxe7.jpg','deluxe8.jpg']}
                 bgColor='bg-gray-800'
             />
             <Separator />
@@ -80,8 +97,10 @@ export default async function Hotel({ params }) {
                 title={lang.titreCha2}
                 text={lang.descCha2}
                 CTAname={lang.bookNow}
+                options={lang.bal}
                 CTAlink='https://b8dd875345308c59.sirvoy.me/'
-                images={['deluxe1.jpg', 'deluxe2.jpg','deluxe3.jpg','deluxe4.jpg','deluxe5.jpg','deluxe6.jpg','deluxe7.jpg','deluxe8.jpg']}
+                  images={['standard1.jpg', 'standard2.jpg','standard3.jpg','standard5.jpg','standard6.jpg','standard7.jpg','standard8.jpg']}
+               
                 bgColor='bg-gray-600'
 
 
@@ -91,6 +110,7 @@ export default async function Hotel({ params }) {
                 title={lang.titreCha3}
                 text={lang.descCha3}
                 CTAname={lang.bookNow}
+                options={lang.ter}
                 CTAlink='https://b8dd875345308c59.sirvoy.me/'
                         images={['junior1.jpg', 'junior2.jpg','junior3.jpg','junior4.jpg','junior5.jpg','junior6.jpg','junior7.jpg','junior8.jpg']}
   bgColor='bg-gray-600'
@@ -100,6 +120,8 @@ export default async function Hotel({ params }) {
                 title={lang.titreCha4}
                 text={lang.descCha4}
                 CTAname={lang.bookNow}
+                options={lang.ter}
+
                 CTAlink='https://b8dd875345308c59.sirvoy.me/'
                        images={['suite1.jpg', 'suite2.jpg','suite3.jpg','suite4.jpg','suite5.jpg','suite6.jpg','suite7.jpg','suite8.jpg']}
                 bgColor='bg-gray-800'

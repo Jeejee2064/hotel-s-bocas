@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 
 
-const Cha1 = ({ title, text, images, CTAname, CTAlink, bgColor }) => {
+const Cha1 = ({ title, text, images, CTAname, CTAlink, bgColor, options }) => {
     console.log(images)
     const controls = useAnimation();
     const [ref, inView] = useInView({
@@ -39,6 +39,7 @@ const Cha1 = ({ title, text, images, CTAname, CTAlink, bgColor }) => {
 
             <div className="   ">
             <Title text={title} />
+            <h1 className='text-center text-gray-200'>{options}</h1>
                 <div className=" mx-auto  items-center justify-center mt-8 ">
                     <motion.div
                         ref={ref}
