@@ -63,7 +63,8 @@ export default async function RootLayout({ children, params }) {
     "checkInTime": "15:00",
     "checkOutTime": "11:00",
     "numberOfRooms": 10,
-    "amenities": [
+    "priceRange":"$$",
+    "amenityFeature": [
       "Free WiFi",
       "Swimming Pool",
       "Restaurant",
@@ -121,7 +122,12 @@ export default async function RootLayout({ children, params }) {
       "@type": "GeoCoordinates",
       "latitude": "9.405",
       "longitude": "-82.252"
-    }
+    },
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "100"  // You can adjust the number of reviews
+  }
   };
 
   return (
