@@ -126,7 +126,7 @@ export default async function RootLayout({ children, params }) {
     "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "100"  // You can adjust the number of reviews
+    "reviewCount": "56"  // You can adjust the number of reviews
   }
   };
 
