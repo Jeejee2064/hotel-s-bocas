@@ -146,15 +146,18 @@ export default async function RootLayout({ children, params }) {
         <meta name="twitter:image" content={image} />
 
         {/* Structured Data */}
-             <NextSeo />
-        <script
+            
+
+      </Head>
+      <body className={poppins.className}>
+              <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(structuredData),
           }}
         />
-      </Head>
-      <body className={poppins.className}>{children}</body>
+        {children}
+        </body>
           </html>
 
     </>
