@@ -38,7 +38,7 @@ export default async function Contact({ params }) {
           </div>
         </div>
       </div>
-      <Title text={lang.contact} className="mb-8" />
+      <Title text={lang.contact} className="mb-8 sm:w-3/4" />
       <div className="w-screen text-gray-200 py-16 md:px-12 px-4 m-auto align-center justify-center flex flex-col items-center">
         <Link className="flex items-center mb-4" href="mailto:sosebbocas@gmail.com">
           <img
