@@ -12,6 +12,7 @@ import SeparatorB from "../components/SeparatorB";
 import dynamic from 'next/dynamic';
 import { getDictionary } from "../../../dictionary";
 import ParallaxBanner from "../components/ParallaxBanner";
+import Head from 'next/head';
 
 const markers = [
 
@@ -342,7 +343,74 @@ const markers = [
 
 ];
 
+
+export async function generateMetadata({ params }) {
+  const lang = params.lang;
+
+  const meta = {
+    en: {
+      title: "What to do in Bocas del Toro, Bluff Beach, Panama",
+description: "Adventure calls you. Surf the majestic waves of the Atlantic, dive into the crystal-clear waters, or enjoy peaceful walks along the golden beaches. Experience the essence of the island.",
+      url: "https://www.hotel-s-bocas.com/en",
+      image: "https://www.hotel-s-bocas.com/en/img/plage3.jpg"
+    },
+    es: {
+      title: "Que hacer en Bocas del Toro, Bluff Beach, Panama",
+description: "La aventura te llama. Surfea las majestuosas olas del Atlántico, sumérgete en las aguas cristalinas o disfruta de paseos tranquilos por las playas doradas. Vive la esencia de la isla.",
+      url: "https://www.hotel-s-bocas.com/es",
+      image: "https://www.hotel-s-bocas.com/es/img/plage3.jpg"
+    },
+    fr: {
+      title: "Activités à Bocas del Toro, Bluff Beach, Panama",
+      description: "L'aventure vous appelle. Surfez sur les vagues majestueuses de l'Atlantique, plongez dans les eaux cristallines ou savourez des balades apaisantes le long des plages dorées. Vivez l'essence de l'île.",
+      url: "https://www.hotel-s-bocas.com/fr",
+      image: "https://www.hotel-s-bocas.com/fr/img/plage3.jpg"
+    }
+  };
+
+  const { title, description, url, image } = meta[lang] || meta['en']; // Default to English if lang is not defined
+
+  return {
+    title,
+    description,
+    url,
+    image,
+   
+  };
+}
+
+const structuredData= {
+  "@context": "https://schema.org",
+  "@type": "TouristDestination",
+  "name": "Bocas del Toro",
+  "description": "Explore the top activities and attractions in Bocas del Toro, including surfing, snorkeling, and exploring the vibrant local culture.",
+  "image": "https://www.hotel-s-bocas.com/fr/img/mimitimbi.JPG",
+  "touristType": "Adventure, Relaxation, Culture",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "9.3405",
+    "longitude": "-82.2490"
+  },
+  "containsPlace": [
+    {
+      "@type": "LandmarksOrHistoricalBuildings",
+      "name": "Bluff Beach",
+      "description": "A stunning beach known for its surfing and natural beauty.",
+      "image": "https://www.hotel-s-bocas.com/fr/img/tortue.JPG",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "9.405",
+        "longitude": "-82.252"
+      }
+    }
+  ]
+};
+
+
+
 export default async function Activities({ params }) {
+      const metadata = await generateMetadata({ params });
+  const { title, description, url, image } = metadata;
     const imagesBeach = ['plage.jpg'];
     const imagesSurf = ['Surf.jpg'];
     const imagesSnorkel = [ 'LionFish.jpg'];
@@ -359,6 +427,35 @@ export default async function Activities({ params }) {
 
 
     return (
+      <>
+
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="icon" href="/favicon.ico" />
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image} />
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={image} />
+
+        {/* Structured Data */}
+            
+
+      </Head>
+                          <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
         <div className="bg-gray-800 w-screen">
             <NavBar
                 hotel={lang.hotel}
@@ -410,6 +507,7 @@ export default async function Activities({ params }) {
               conditions={lang.conditions}
               />
         </div>
+        </>
     );
 };
 
