@@ -6,10 +6,241 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { styleScript, poppins, allura } from "../fonts";
 import Image from 'next/image';
 
-const supabaseUrl = 'https://hcfverwtnuachlqycvos.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhjZnZlcnd0bnVhY2hscXljdm9zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDMzNjgxMTAsImV4cCI6MjAxODk0NDExMH0.OlZ46uVL9GuetJg5m7VFoxCkU054l9nxJiT5vSD54UQ';
-const supabase = createClient(supabaseUrl, supabaseKey);
 
+
+const dinerData = [
+  {
+    id: 1,
+    categorie: 'tapas',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 2,
+    categorie: 'entrée',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 3,
+    categorie: 'plat',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 4,
+    categorie: 'dessert',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 5,
+    categorie: 'dessert',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+
+];
+
+const dejeunerData = [
+  {
+    id: 1,
+    categorie: 'tapas',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 2,
+    categorie: 'entrée',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 3,
+    categorie: 'plat',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 4,
+    categorie: 'dessert',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 5,
+    categorie: 'dessert',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+
+];
+const barData = [
+  {
+    id: 1,
+    categorie: 'tapas',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 2,
+    categorie: 'entrée',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 3,
+    categorie: 'plat',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 4,
+    categorie: 'dessert',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 5,
+    categorie: 'dessert',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+
+];
+const ptidejData = [
+  {
+    id: 1,
+    categorie: 'tapas',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 2,
+    categorie: 'entrée',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 3,
+    categorie: 'plat',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 4,
+    categorie: 'dessert',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+    {
+    id: 5,
+    categorie: 'dessert',
+    nom_en: 'Spanish Omelette',
+    nom_fr: 'Omelette Espagnole',
+    nom_es: 'Tortilla Española',
+    description_en: 'A classic Spanish dish with eggs, potatoes, and onions.',
+    description_fr: 'Un plat espagnol classique à base d\'œufs, de pommes de terre et d\'oignons.',
+    description_es: 'Un plato clásico español con huevos, patatas y cebollas.',
+    prix: 12.99,
+  },
+
+];
 // Get the current path
 const currentPath = window.location.pathname;
 
@@ -119,30 +350,6 @@ export default function DinerMenu({titleBar,titleBreakfast,titleDiner,titleLunch
 
 
 
-  const [dinerData, setDinerData] = useState([]);
-  const [dejeunerData, setDejeunerData] = useState([]);
-  const [barData, setBarData] = useState([]);
-  const [ptidejData, setPtidejData] = useState([]);
-
-  useEffect(() => {
-    async function fetchData(table, setData) {
-      try {
-        const { data, error } = await supabase.from(table).select('*');
-
-        if (error) {
-          throw error;
-        }
-
-        setData(data);
-      } catch (error) {
-        console.error(`Error fetching ${table} data:`, error.message);
-      }
-    }
-    fetchData('diner', setDinerData);
-    fetchData('dejeuner', setDejeunerData);
-    fetchData('bar', setBarData);
-    fetchData('ptidej', setPtidejData);
-  }, []);
 
 
 

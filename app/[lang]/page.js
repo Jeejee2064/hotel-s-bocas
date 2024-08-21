@@ -16,20 +16,20 @@ export async function generateMetadata({ params }) {
 
   const meta = {
     en: {
-      title: "Hotel S Bocas del Toro, Bluff Beach, Panama",
-      description: "Discover luxury and comfort at Hotel S Bocas in Bocas del Toro, Islà Colón, Bluff Beach, Panamà. Enjoy stunning views, top-notch service, and an unforgettable stay.",
+      title: "Boutique Hotel Restaurant S Bocas del Toro, Bluff Beach, Panama",
+      description: "Discover luxury, comfort and gastronomy at Hotel Restaurant S Bocas in Bocas del Toro, Islà Colón, Bluff Beach, Panamà. Enjoy stunning views, top-notch service, and an unforgettable stay.",
       url: "https://www.hotel-s-bocas.com/en",
       image: "https://www.hotel-s-bocas.com/en/img/ext3.jpeg"
     },
     es: {
-      title: "Hotel S Bocas del Toro, Bluff Beach, Panama",
-      description: "Descubre lujo y comodidad en Hotel S Bocas en Bocas del Toro, Islà Colón, Bluff Beach, Panamà. Disfruta de vistas impresionantes, servicio de primera clase y una estancia inolvidable.",
+      title: "Boutique Hotel Restaurante S Bocas del Toro, Bluff Beach, Panama",
+      description: "Descubre lujo, comodidad y gastronomía en Hotel S Bocas en Bocas del Toro, Islà Colón, Bluff Beach, Panamà. Disfruta de vistas impresionantes, servicio de primera clase y una estancia inolvidable.",
       url: "https://www.hotel-s-bocas.com/es",
       image: "https://www.hotel-s-bocas.com/es/img/ext3.jpeg"
     },
     fr: {
-      title: "Hotel S Bocas del Toro, Bluff Beach, Panama",
-      description: "Découvrez le luxe et le confort à l'Hôtel S Bocas à Bocas del Toro, Islà Colón, Bluff Beach, Panamà. Profitez de vues imprenables, d'un service exceptionnel et d'un séjour inoubliable.",
+      title: "Boutique Hotel Restaurant S Bocas del Toro, Bluff Beach, Panama",
+      description: "Découvrez le luxe, le confort et la gastronomie à l'Hôtel S Bocas à Bocas del Toro, Islà Colón, Bluff Beach, Panamà. Profitez de vues imprenables, d'un service exceptionnel et d'un séjour inoubliable.",
       url: "https://www.hotel-s-bocas.com/fr",
       image: "https://www.hotel-s-bocas.com/fr/img/ext3.jpeg"
     }

@@ -8,6 +8,7 @@ import Title from './Title';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import CTA from './CTA';
 
 const ImaGauAct = ({ images, titre, text,heureptidej,heuredej,heuredin,horaire }) => {
     const controls = useAnimation();
@@ -99,7 +100,9 @@ const ImaGauAct = ({ images, titre, text,heureptidej,heuredej,heuredin,horaire }
                                 {heuredin}
                             </p>
                         </div>
+                       
                     </motion.div>
+
                 </motion.div>
 
             </div>

@@ -15,20 +15,20 @@ export async function generateMetadata({ params }) {
 
   const meta = {
     en: {
-      title: "Contact Hotel S Bocas del Toro, Bluff Beach, Panama",
-description: "Contact page for Hotel S Bocas del Toro, Bluff Beach, Panama.",
+      title: "Hotel S Bocas del Toro, Bluff Beach, Panama",
+description: "Welcome to our Hotel in Bluff Beach, the wild beauty of the island. Discover the luxury of a retreat where nature and comfort intertwine elegantly.",
       url: "https://www.hotel-s-bocas.com/en",
       image: "https://www.hotel-s-bocas.com/en/img/ext4.jpeg"
     },
     es: {
-      title: "Contacto Hotel S Bocas del Toro, Bluff Beach, Panama",
-description: "Pàgina de contacto del Hotel S Bocas del Toro, Bluff Beach, Panama.",
+      title: "Hotel S Bocas del Toro, Bluff Beach, Panama",
+description: "Bienvenido a Bluff Beach, la belleza salvaje de la isla. Descubre el lujo de un retiro donde la naturaleza y el confort se entrelazan con elegancia.",
       url: "https://www.hotel-s-bocas.com/es",
       image: "https://www.hotel-s-bocas.com/es/img/ext4.jpeg"
     },
     fr: {
-      title: "Contact Hotel S Bocas del Toro, Bluff Beach, Panama",
-description: "Page de contact de l'Hotel S Bocas del Toro, Bluff Beach, Panama.",
+      title: "Hotel S Bocas del Toro, Bluff Beach, Panama",
+description: "Bienvenue à Bluff Beach, la beauté sauvage de l'île. Découvrez le luxe d'une retraite où nature et confort s'entrelacent avec élégance.",
       url: "https://www.hotel-s-bocas.com/fr",
       image: "https://www.hotel-s-bocas.com/fr/img/ext4.jpeg"
     }
