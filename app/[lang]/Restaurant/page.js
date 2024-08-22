@@ -71,7 +71,7 @@ const structuredData = {
     "latitude": "9.405",
     "longitude": "-82.252"
   },
- "telephone": "+507-6798-7980",
+ "telephone": "+507-6803-1299",
     "email": "sosebbocas@gmail.com",
   "priceRange": "$-$$",
   "servesCuisine": "Caribbean, International",

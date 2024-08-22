@@ -64,7 +64,7 @@ export default async function AboutUs({ params }) {
       "postalCode": "00000",
       "addressCountry": "PA"
     },
-    "telephone": "+507-6798-7980",
+    "telephone": "+507-6803-1299",
     "email": "sosebbocas@gmail.com",
     "sameAs": "https://www.instagram.com/hotel_s_bocas/",
     "checkInTime": "15:00",
