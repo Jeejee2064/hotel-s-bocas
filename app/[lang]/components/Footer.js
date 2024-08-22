@@ -31,7 +31,7 @@ const Footer = ({ email, phone, adress, contact, conditions }) => {
              sosebbocas@gmail.com
             </Link>
             <br />
-            <Link className='flex  items-center  ' href="https://wa.me/50767987980">
+            <Link className='flex  items-center  ' href="https://wa.me/50768031299">
             <img
               src="/whatsapp.png"
               alt="whatsapp icon" 
@@ -39,7 +39,7 @@ const Footer = ({ email, phone, adress, contact, conditions }) => {
               height={30}
               className="mr-2"
             />
-           +50767987980 (WhatsApp)</Link>
+           +50768031299 (WhatsApp)</Link>
             <br />
             <Link className='flex  items-center ' href="https://www.google.com/maps/place/9%C2%B024'21.7%22N+82%C2%B015'02.8%22W/@9.4058516,-82.2526802,17z/">
             <img
