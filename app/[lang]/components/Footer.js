@@ -20,7 +20,7 @@ const Footer = ({ email, phone, adress, contact, conditions }) => {
           <div className="text-2xl font-bold my-4">{contact}</div>
           <div>
             
-            <Link className='flex  items-center ' href="mailto:sosebbocas@gmail.com">
+            <Link className='flex  items-center ' href="mailto:info@hotel-s-bocas.com">
             <img
               src="/email.png"
               alt="mail icon" 
@@ -28,7 +28,7 @@ const Footer = ({ email, phone, adress, contact, conditions }) => {
               height={30}
               className="mr-2"
             />
-             sosebbocas@gmail.com
+             info@hotel-s-bocas.com
             </Link>
             <br />
             <Link className='flex  items-center  ' href="https://wa.me/50768031299">

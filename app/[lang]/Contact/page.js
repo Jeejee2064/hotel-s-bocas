@@ -68,7 +68,7 @@ export default async function Contact({ params }) {
       "addressCountry": "PA"
     },
     "telephone": "+507-6803-1299",
-    "email": "sosebbocas@gmail.com",
+    "email": "info@hotel-s-bocas.com",
     "sameAs": "https://www.instagram.com/hotel_s_bocas/",
     "checkInTime": "15:00",
     "checkOutTime": "11:00",
@@ -154,7 +154,7 @@ export default async function Contact({ params }) {
       </div>
       <Title text={lang.contact} className="mb-8 sm:w-3/4" />
       <div className="w-screen text-gray-200 py-16 md:px-12 px-4 m-auto align-center justify-center flex flex-col items-center">
-        <Link className="flex items-center mb-4" href="mailto:sosebbocas@gmail.com">
+        <Link className="flex items-center mb-4" href="mailto:info@hotel-s-bocas.com">
           <img
             src="/email.png"
             alt="mail icon"
@@ -162,7 +162,7 @@ export default async function Contact({ params }) {
             height={30}
             className="mr-2"
           />
-          sosebbocas@gmail.com
+          info@hotel-s-bocas.com
         </Link>
         <Link className="flex items-center mb-4" href="https://wa.me/50768031299">
           <img

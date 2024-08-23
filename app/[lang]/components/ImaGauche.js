@@ -7,6 +7,13 @@ import { useInView } from 'react-intersection-observer';
 import Title from './Title';
 import CTA from './CTA';
 import Link from 'next/link';
+import localFont from 'next/font/local';
+
+
+const ostrich = localFont({
+  src: '../OstrichSans-Medium.otf', // Adjust the path accordingly
+
+})
 
 const ImaGauche = ({ image, text, title, href, cta }) => {
     const controls = useAnimation();
@@ -59,8 +66,10 @@ const ImaGauche = ({ image, text, title, href, cta }) => {
                         className="px-10  z-10 justify-center items-center"
                     >
                             <Title text={title} />
-                        <p className="text-l text-gray-100 md:text-1xl lg:text-xl align-text-center">
+                         
+                        <p className="text-xl text-gray-100 md:text-2xl lg:text-xl align-text-center">
                             {text}                        </p>
+                         
                         <Link href={href}>
                             <CTA name={cta} />
                         </Link>

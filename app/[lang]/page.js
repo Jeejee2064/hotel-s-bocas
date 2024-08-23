@@ -70,7 +70,7 @@ export default async function Home({params}) {
       "addressCountry": "PA"
     },
     "telephone": "+507-6803-1299",
-    "email": "sosebbocas@gmail.com",
+    "email": "info@hotel-s-bocas.com",
     "sameAs": "https://www.instagram.com/hotel_s_bocas/",
     "checkInTime": "15:00",
     "checkOutTime": "11:00",
@@ -138,14 +138,14 @@ export default async function Home({params}) {
       bookNow={lang.bookNow}
       />
       <BGSlider title={lang.hotelResto}
-      images = {['piscine2.jpeg', 'chambre5.jpeg', 'resto7.jpeg', 'resto7.jpeg', 'resto7.jpeg', 'resto7.jpeg', 'resto3.jpeg', 'resto4.jpeg', 'resto5.jpeg', 'resto6.jpeg']}
+      images = {['piscine2.jpeg', 'chambre5.jpeg', 'resto7.jpeg']}
       />
       <ImaGauche image='ext4.jpeg' text={lang.homeHotel} title={lang.hotel} cta={lang.viewMore} href='/Hotel'/>
       <Separator />     
       <ImaDroite image='resto7.jpeg' text={lang.homeRestaurant} title={lang.resto} cta={lang.viewMore} href='/Restaurant'/>
       <SeparatorB />
 
-      <ImaGauche image='plage.jpg' text={lang.homeActivities} title={lang.activite} cta={lang.viewMore} href='/Activities'/>
+      <ImaGauche image='bluff.JPG' text={lang.homeActivities} title={lang.activite} cta={lang.viewMore} href='/Activities'/>
         <Separator />   
       <ImaDroite image='lys.jpg' text={lang.homeFaune} title={lang.faune} cta={lang.viewMore} href='/Faune'/>
   

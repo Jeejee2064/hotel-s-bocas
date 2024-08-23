@@ -66,7 +66,7 @@ export default async function Hotel({ params }) {
       "addressCountry": "PA"
     },
     "telephone": "+507-6803-1299",
-    "email": "sosebbocas@gmail.com",
+    "email": "info@hotel-s-bocas.com",
     "sameAs": "https://www.instagram.com/hotel_s_bocas/",
     "checkInTime": "15:00",
     "checkOutTime": "11:00",
@@ -133,7 +133,7 @@ export default async function Hotel({ params }) {
                 bookNow={lang.bookNow}
             />
             <BGSlider
-                title={lang.hotel}
+                title={lang.bouhotel}
                 images={['ext1.jpg', 'chambre2.jpg', 'saldeb2.jpg']}
             />
             <div
@@ -220,7 +220,7 @@ export default async function Hotel({ params }) {
                 CTAname={lang.bookNow}
                 options={lang.ter}
                 CTAlink='https://b8dd875345308c59.sirvoy.me/'
-                        images={['junior1.jpg', 'junior2.jpg','junior3.jpg','junior4.jpg','junior5.jpg','junior6.jpg','junior7.jpg','junior8.jpg']}
+                        images={['junior1.jpg', 'junior2.jpg','junior3.jpg','junior4.jpg','junior5.jpg','junior6.jpg']}
   bgColor='bg-gray-600'
             />
             <SeparatorB/>

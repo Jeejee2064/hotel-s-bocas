@@ -7,9 +7,13 @@ import { useInView } from 'react-intersection-observer';
 import Title from './Title';
 import CTA from './CTA';
 import Link from 'next/link';
+import localFont from 'next/font/local';
 
 
+const ostrich = localFont({
+  src: '../OstrichSans-Medium.otf', // Adjust the path accordingly
 
+})
 const ImaDroite = ({image, text,title,href, cta}) => {
     const controls = useAnimation();
     const [ref, inView] = useInView({

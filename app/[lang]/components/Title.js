@@ -3,7 +3,13 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { allura } from "../fonts";
+import localFont from 'next/font/local';
+
+
+const ostrich = localFont({
+  src: '../OstrichSans-Medium.otf', // Adjust the path accordingly
+
+})
 
 const Title  = ({ text }) => {
   const controls = useAnimation();
@@ -19,7 +25,7 @@ const Title  = ({ text }) => {
   }, [controls, inView]);
 
   return (
-    <div ref={ref} className={allura.className}>
+    <div ref={ref} className={ostrich.className}>
       <motion.h1
         initial="hidden"
         animate={controls}
@@ -28,7 +34,7 @@ const Title  = ({ text }) => {
           visible: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: 50 },
         }}
-        className="px-4 text-6xl text-center  text-gray-200 font-bold"
+        className="px-4 mb-8 text-6xl text-center tracking-wider text-gray-200 font-bold"
       >
         {text}
       </motion.h1>

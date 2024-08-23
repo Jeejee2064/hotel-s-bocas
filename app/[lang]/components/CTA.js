@@ -3,7 +3,13 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { parisienne } from '../fonts';
+import localFont from 'next/font/local';
+
+
+const ostrich = localFont({
+  src: '../OstrichSans-Medium.otf', // Adjust the path accordingly
+
+})
 
 const CTA = ({ name }) => {
   const [ref, inView] = useInView({
@@ -29,7 +35,7 @@ const CTA = ({ name }) => {
       <motion.button
         key={animationKey}
         ref={ref}
-        className="border-solid border-2 text-2xl bg-white text-gray-800 py-4 px-4 rounded-lg mt-8"
+        className="border-solid border-2  bold text-2xl bg-white text-gray-800 py-4 px-4 rounded-lg mt-8"
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
         variants={buttonVariants}

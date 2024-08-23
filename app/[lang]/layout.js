@@ -1,7 +1,10 @@
-import { poppins } from './fonts';
 import './globals.css';
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
+import { poppins } from './fonts';
+
+
+
 
 export async function generateMetadata({ params }) {
   const lang = params.lang;

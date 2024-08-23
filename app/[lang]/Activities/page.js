@@ -481,7 +481,7 @@ export default async function Activities({ params }) {
                     text={lang.hikesText}
                     images={imagesHikes}
                 />
-                <ParallaxBanner image='./img/bluff.JPG' text='Isla Cólon' />
+                <ParallaxBanner image='./img/bluff.JPG' text='Isla Colón' />
 
                 <ImaGauAct
                     titre={lang.snorkel}

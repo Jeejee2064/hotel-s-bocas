@@ -1,5 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import localFont from 'next/font/local';
+
+
+const ostrich = localFont({
+  src: '../OstrichSans-Medium.otf', // Adjust the path accordingly
+
+})
 
 const AniText = ({ text }) => {
   // splitting text into letters
@@ -39,6 +46,7 @@ const AniText = ({ text }) => {
   };
 
   return (
+     <div className={ostrich.className}>
     <motion.div
       className="overflow-hidden  text-xl text-white md:text-4xl"
       variants={container}
@@ -55,6 +63,7 @@ const AniText = ({ text }) => {
         </motion.span>
       ))}
     </motion.div>
+    </div>
   );
 };
 

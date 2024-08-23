@@ -72,7 +72,7 @@ const structuredData = {
     "longitude": "-82.252"
   },
  "telephone": "+507-6803-1299",
-    "email": "sosebbocas@gmail.com",
+    "email": "info@hotel-s-bocas.com",
   "priceRange": "$-$$",
   "servesCuisine": "Caribbean, International",
   "menu": "https://www.hotel-s-bocas.com/Restaurant",
