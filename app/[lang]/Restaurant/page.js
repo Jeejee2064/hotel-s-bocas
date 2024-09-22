@@ -155,15 +155,14 @@ const structuredData = {
             />
             <div className='py-12'>
             <ParallaxBanner image='./img/resto3.jpeg' text='Au Menu'/>
-            <div className='h-screen text-gray-200 text-center flex justify-center items-center w-screen text-xl lg:text-2xl'>{lang.cs}</div>
- {/* 
+ 
 <DinerMenu
     titleBar={lang.bar}
     titleBreakfast={lang.breakfast}
     titleDiner={lang.diner}
     titleLunch={lang.lunch}
 />
-*/}
+
             </div>
       <Footer
              email={lang.email}
