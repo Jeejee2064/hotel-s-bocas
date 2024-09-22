@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 import { poppins } from './fonts';
 
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -75,6 +76,8 @@ export default async function RootLayout({ children, params }) {
       <body className={poppins.className}>
              
         {children}
+                <Analytics />
+
         </body>
           </html>
 
