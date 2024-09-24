@@ -26,7 +26,7 @@ const Title  = ({ text }) => {
 
   return (
     <div ref={ref} className={ostrich.className}>
-      <motion.h1
+      <motion.h2
         initial="hidden"
         animate={controls}
         transition={{ duration: 0.6 }}
@@ -37,7 +37,7 @@ const Title  = ({ text }) => {
         className="px-4 mb-8 text-6xl text-center tracking-wider text-gray-200 font-bold"
       >
         {text}
-      </motion.h1>
+      </motion.h2>
     </div>
   );
 };

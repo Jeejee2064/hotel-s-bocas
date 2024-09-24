@@ -9,6 +9,13 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Lottie from 'lottie-react';
 import loadingAnimation from '../../../public/loadingAnimation.json'; // Replace with your Lottie JSON file path
+import localFont from 'next/font/local';
+
+
+const ostrich = localFont({
+  src: '../OstrichSans-Medium.otf', // Adjust the path accordingly
+
+})
 
 const BGSlider = ({ images, title }) => {
   const [loadedImages, setLoadedImages] = useState(0);
@@ -90,8 +97,11 @@ const BGSlider = ({ images, title }) => {
       />
     </div>
                 </div>
-                <AnimatedTextCharacter text={title} />
-                <AniText text="Playa Bluff, Bocas del Toro" />
+                     <div className={ostrich.className}>
+
+                <h1 className='p-12 text-4xl md:text-6xl xl:text-6xl text-white'>{title} </h1>
+                <h2 className='text-2xl text-white md:text-3xl'>Playa Bluff, Bocas del Toro</h2>
+              </div>
               </div>
             </div>
           </div>

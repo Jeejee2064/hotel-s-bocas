@@ -54,12 +54,12 @@ const AniText = ({ text }) => {
       animate="visible"
     >
       {letters.map((letter, index) => (
-        <motion.span    
-        className="justify-center text-white" 
+        <motion.h1    
+        className="justify-center flex text-white" 
         variants={child} 
         key={index}>
           {letter === " " ? "\u00A0" : letter}
-        </motion.span>
+        </motion.h1>
       ))}
     </motion.div>
     </div>

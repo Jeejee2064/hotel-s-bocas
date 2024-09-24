@@ -1,15 +1,9 @@
 import './globals.css';
-import Head from 'next/head';
-import { NextSeo } from 'next-seo';
-import { poppins } from './fonts';
-
 import { Analytics } from '@vercel/analytics/react';
-
-
+import { poppins } from './fonts';
 
 export async function generateMetadata({ params }) {
   const lang = params.lang;
-
   const meta = {
     en: {
       title: "Hotel S Bocas del Toro, Bluff Beach, Panama",
@@ -30,57 +24,41 @@ export async function generateMetadata({ params }) {
       image: "https://www.hotel-s-bocas.com/fr/img/ext4.jpeg"
     }
   };
-
   const { title, description, url, image } = meta[lang] || meta['en']; // Default to English if lang is not defined
 
   return {
     title,
     description,
-    url,
-    image,
-    lang,
+    openGraph: {
+      title,
+      description,
+      images: [
+        {
+          url: image,
+        },
+      ],
+      url,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [image],
+    },
+    alternates: {
+      canonical: url,
+    },
   };
 }
 
-export default async function RootLayout({ children, params }) {
-  const metadata = await generateMetadata({ params });
-  const { title, description, url, image, lang } = metadata;
-
- 
-
+export default function RootLayout({ children, params }) {
   return (
-    <>
-        <html lang={lang}>
-
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <link rel="icon" href="/favicon.ico" />
-        {/* Open Graph Meta Tags */}
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image" content={image} />
-        <meta property="og:url" content={url} />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={image} />
-
-        {/* Structured Data */}
-            
-
-      </Head>
+    <html lang={params.lang}>
       <body className={poppins.className}>
-             
         {children}
-                <Analytics />
-
-        </body>
-          </html>
-
-    </>
+        <Analytics />
+      </body>
+    </html>
   );
 }
