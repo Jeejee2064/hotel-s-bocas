@@ -31,7 +31,7 @@ const Footer = ({ email, phone, adress, contact, conditions }) => {
              info@hotel-s-bocas.com
             </Link>
             <br />
-            <Link className='flex  items-center  ' href="https://wa.me/50768031299">
+            <Link className='flex  items-center  ' href="https://wa.me/50767987980">
             <img
               src="/whatsapp.png"
               alt="whatsapp icon" 
