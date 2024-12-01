@@ -196,7 +196,7 @@ export default async function Hotel({ params }) {
                 text={lang.descCha1}
                 CTAname={lang.bookNow}
                 options={lang.bal}
-                CTAlink='https://b8dd875345308c59.sirvoy.me/'
+                CTAlink='https://us2.cloudbeds.com/en/reservation/a81uKh/'
                        images={['deluxe1.jpg', 'deluxe2.jpg','deluxe3.jpg','deluxe4.jpg','deluxe5.jpg','deluxe6.jpg','deluxe7.jpg','deluxe8.jpg']}
                 bgColor='bg-gray-800'
             />
@@ -206,7 +206,7 @@ export default async function Hotel({ params }) {
                 text={lang.descCha2}
                 CTAname={lang.bookNow}
                 options={lang.bal}
-                CTAlink='https://b8dd875345308c59.sirvoy.me/'
+                CTAlink='https://us2.cloudbeds.com/en/reservation/a81uKh/'
                   images={['standard1.jpg', 'standard2.jpg','standard3.jpg','standard5.jpg','standard6.jpg','standard7.jpg','standard8.jpg']}
                
                 bgColor='bg-gray-600'
@@ -219,7 +219,7 @@ export default async function Hotel({ params }) {
                 text={lang.descCha3}
                 CTAname={lang.bookNow}
                 options={lang.ter}
-                CTAlink='https://b8dd875345308c59.sirvoy.me/'
+                CTAlink='https://us2.cloudbeds.com/en/reservation/a81uKh/'
                         images={['junior1.jpg', 'junior2.jpg','junior3.jpg','junior4.jpg','junior5.jpg','junior6.jpg']}
   bgColor='bg-gray-600'
             />
@@ -230,7 +230,7 @@ export default async function Hotel({ params }) {
                 CTAname={lang.bookNow}
                 options={lang.ter}
 
-                CTAlink='https://b8dd875345308c59.sirvoy.me/'
+                CTAlink='https://us2.cloudbeds.com/en/reservation/a81uKh/'
                        images={['suite1.jpg', 'suite2.jpg','suite3.jpg','suite4.jpg','suite5.jpg','suite6.jpg','suite7.jpg','suite8.jpg']}
                 bgColor='bg-gray-800'
 

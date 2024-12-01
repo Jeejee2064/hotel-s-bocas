@@ -1,6 +1,7 @@
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { poppins } from './fonts';
+import Script from 'next/script';
 
 export async function generateMetadata({ params }) {
   const lang = params.lang;
@@ -53,9 +54,12 @@ export async function generateMetadata({ params }) {
 }
 
 export default function RootLayout({ children, params }) {
+
   return (
     <html lang={params.lang}>
+<script src="https://us2.cloudbeds.com/widget/load/a81uKh/float?newWindow=1"></script>
       <body className={poppins.className}>
+
         {children}
         <Analytics />
       </body>

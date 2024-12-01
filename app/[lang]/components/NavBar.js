@@ -266,7 +266,7 @@ const NavBar = ({ hotel, resto, activite, about, contact, faune, bookNow }) => {
                 initial="initial"
                 animate="animate"
               >
-                <Link href="https://b8dd875345308c59.sirvoy.me" passHref>
+                <Link href="https://us2.cloudbeds.com/en/reservation/a81uKh/" passHref>
                   <button className=" bg-blue-500 text-white px-4 py-2 rounded">
                     {bookNow}
                   </button>
@@ -282,7 +282,7 @@ const NavBar = ({ hotel, resto, activite, about, contact, faune, bookNow }) => {
         initial="initial"
         animate="animate"
       >
-        <Link href="https://b8dd875345308c59.sirvoy.me/" passHref>
+        <Link href="https://us2.cloudbeds.com/en/reservation/a81uKh/" passHref>
           <button className="hidden lg:block bg-blue-500 text-white mr-4 px-4 py-2 rounded">
             {bookNow}
           </button>
