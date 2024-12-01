@@ -10,7 +10,6 @@ import ParallaxBanner from "./components/ParallaxBanner";
 import BigText from "./components/BigText";
 import { getDictionary } from "../../dictionary";
 import Head from 'next/head';
-import Script from 'next/script';
 
 export async function generateMetadata({ params }) {
   const lang = params.lang;
@@ -129,7 +128,7 @@ export default async function Home({params}) {
           }}
         />
     <div className="bg-gray-800">
-    
+
       <NavBar 
       hotel={lang.hotel} 
       resto={lang.resto} 

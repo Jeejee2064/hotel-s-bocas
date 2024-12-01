@@ -1,7 +1,6 @@
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { poppins } from './fonts';
-import Script from 'next/script';
 
 export async function generateMetadata({ params }) {
   const lang = params.lang;
