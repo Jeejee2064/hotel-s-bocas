@@ -128,7 +128,6 @@ export default async function Home({params}) {
           }}
         />
     <div className="bg-gray-800">
-
       <NavBar 
       hotel={lang.hotel} 
       resto={lang.resto} 

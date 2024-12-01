@@ -53,12 +53,9 @@ export async function generateMetadata({ params }) {
 }
 
 export default function RootLayout({ children, params }) {
-
   return (
     <html lang={params.lang}>
-<script src="https://us2.cloudbeds.com/widget/load/a81uKh/float?newWindow=1"></script>
       <body className={poppins.className}>
-
         {children}
         <Analytics />
       </body>
